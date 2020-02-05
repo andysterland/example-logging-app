@@ -1,0 +1,17 @@
+{
+  "name": ".NET Core WSL Launch",
+  "type": "coreclr",
+  "request": "launch",
+  "preLaunchTask": "publish",
+  "program": "/mnt/c/temp/dotnetapps/wslApp/bin/publish/wslApp.dll",
+  "args": [],
+  "cwd": "/mnt/c/temp/dotnetapps/wslApp",
+  "stopAtEntry": false,
+  "console": "internalConsole",
+  "pipeTransport": {
+    "pipeCwd": "${workspaceRoot}",
+    "pipeProgram": "bash.exe",
+    "pipeArgs": [ "-c" ],
+    "debuggerPath": "~/vsdbg/vsdbg"
+  }
+}
